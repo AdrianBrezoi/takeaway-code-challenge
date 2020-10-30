@@ -1,4 +1,14 @@
 <div class="profile-container">
     <img class="avatar" alt="profile icon" src="@/assets/quokka-profile-pic.jpg"/>
-    <h2> I AM PROFILE COMPONENT</h2>
+    <h4>User info</h4>
+        <div>{{userProfile.userName}}</div>
+        <div>{{userProfile.name}}</div>
+        <div>{{userProfile.phone}}</div>
+        <div>{{userProfile.email}}</div>
+        <div>{{userProfile.website}}</div>
+    <h4>Address</h4>
+        <div>{{userProfile.address.street}}</div>
+        <div>{{userProfile.address.suite}}</div>
+        <div>{{userProfile.address.city}}</div>
+        <div>{{userProfile.address.zipcode}}</div>
 </div>

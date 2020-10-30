@@ -4,7 +4,7 @@ import OrderHistory from "@/components/OrderHistory/OrderHistory.vue";
 import Profile from "@/components/Profile/Profile.vue";
 
 export default {
-    name: "Main",
+    name: "Home",
     components: {
         Profile,
         OrderHistory

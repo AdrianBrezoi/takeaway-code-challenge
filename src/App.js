@@ -2,17 +2,17 @@ import NotificationBanner from "@/components/NotificationBanner/NotificationBann
 import Header from "@/components/Header/Header.vue";
 
 import axios from "axios";
+import {mapActions} from "vuex";
 
 export default {
     name: "App",
     components: {Header, NotificationBanner},
-    mounted: () => {
+    methods: {
+        ...mapActions(['fetchProfile']),
+    },
+    created() {
         // Fake user
-        axios
-            .get("https://jsonplaceholder.typicode.com/users?_limit=1")
-            .then(value => {
-                console.log("ABR - User Profile", value);
-            });
+            this.fetchProfile();
 
         //Fake order history
         axios
