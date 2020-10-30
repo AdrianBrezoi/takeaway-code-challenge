@@ -21,13 +21,5 @@ export default {
                 console.log("ABR - Order History", value);
             });
 
-        // Fake order details
-        axios
-            .get("https://jsonplaceholder.typicode.com/posts/1/comments?_limit=2")
-            .then(value => {
-                console.log("ABR - Order details", value);
-            });
-
-        console.log("HI");
     }
 };
