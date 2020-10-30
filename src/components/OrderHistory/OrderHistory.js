@@ -1,3 +1,21 @@
+import OrderItem from "@/components/OrderItem/OrderItem";
+
 export default {
-  name: "OrderHistory"
+    name: "OrderHistory",
+    props: {
+        orders: {
+            type: Array,
+            required: true,
+            validator(input) {
+                console.log('VALIDATOR input', input,input.length)
+                return input.length >= 2 && input.length <= 5;
+            }
+        },
+        currency: {
+            type: String,
+            required: true
+        }
+    },
+    components:
+    OrderItem
 };

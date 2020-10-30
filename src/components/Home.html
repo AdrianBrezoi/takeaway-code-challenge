@@ -1,4 +1,8 @@
 <div class="home">
     <Profile />
-    <OrderHistory />
+<!--    TODO: add no-orders screen when orders not present-->
+    <div v-if="orders.length > 0">
+    <OrderHistory v-bind:orders="orders" v-bind:currency="'EUR'" />
+    </div>
+    <div v-else>No orders yet</div>
 </div>

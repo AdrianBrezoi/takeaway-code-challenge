@@ -1,3 +1,7 @@
-<div>
-   <p>I am order history component</p>
+<div class="orders-container">
+    <ul>
+        <li v-for="order in orders" :key="order.id">
+            {{order}}
+        </li>
+    </ul>
 </div>

@@ -1,14 +1,20 @@
 <div class="profile-container">
     <img class="avatar" alt="profile icon" src="@/assets/quokka-profile-pic.jpg"/>
     <h4>User info</h4>
-        <div>{{userProfile.userName}}</div>
-        <div>{{userProfile.name}}</div>
-        <div>{{userProfile.phone}}</div>
-        <div>{{userProfile.email}}</div>
-        <div>{{userProfile.website}}</div>
+<!--    TODO: Add loading indicator here, only use data after it's present-->
+    <div v-if="userProfile">
+        <div>{{ userProfile.userName }}</div>
+        <div>{{ userProfile.name }}</div>
+        <div>{{ userProfile.phone }}</div>
+        <div>{{ userProfile.email }}</div>
+        <div>{{ userProfile.website }}</div>
+    </div>
     <h4>Address</h4>
-        <div>{{userProfile.address.street}}</div>
-        <div>{{userProfile.address.suite}}</div>
-        <div>{{userProfile.address.city}}</div>
-        <div>{{userProfile.address.zipcode}}</div>
+    <div v-if="userProfile.address">
+        <div>{{ userProfile.address.street }}</div>
+        <div>{{ userProfile.address.suite }}</div>
+        <div>{{ userProfile.address.city }}</div>
+        <div>{{ userProfile.address.zipcode }}</div>
+    </div>
+
 </div>
