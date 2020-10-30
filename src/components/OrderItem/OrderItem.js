@@ -1,3 +1,11 @@
 export default {
-  name: "OrderItem"
+    name: "OrderItem",
+    props: {
+        title: {
+            type: String, required: true
+        },
+        body: {
+            type: String, required: true
+        }
+    }
 };

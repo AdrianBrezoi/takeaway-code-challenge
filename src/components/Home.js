@@ -2,11 +2,14 @@
 
 import OrderHistory from "@/components/OrderHistory/OrderHistory.vue";
 import Profile from "@/components/Profile/Profile.vue";
+import {mapGetters} from "vuex";
 
 export default {
     name: "Home",
     components: {
         Profile,
         OrderHistory
-    }
+    },
+    computed: {...mapGetters(['orders'])},
+
 };

@@ -1,6 +1,7 @@
 <div class="home">
     <Profile />
-<!--    TODO: add no-orders screen when orders not present-->
+    <!--    TODO: add no-orders screen when orders not present-->
+    <!--    TODO: Improve v-if to validate >2 <5 orders.len-->
     <div v-if="orders.length > 0">
     <OrderHistory v-bind:orders="orders" v-bind:currency="'EUR'" />
     </div>

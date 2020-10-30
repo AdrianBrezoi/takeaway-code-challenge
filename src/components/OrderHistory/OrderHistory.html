@@ -1,7 +1,5 @@
 <div class="orders-container">
-    <ul>
-        <li v-for="order in orders" :key="order.id">
-            {{order}}
-        </li>
-    </ul>
+    <div v-for="order in orders" :key="order.id" @click="orderClicked(order.id)">
+        <OrderItem v-bind:title="order.title" v-bind:body="order.body"/>
+    </div>
 </div>

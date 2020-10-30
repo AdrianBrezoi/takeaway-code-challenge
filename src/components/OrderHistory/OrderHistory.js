@@ -1,4 +1,4 @@
-import OrderItem from "@/components/OrderItem/OrderItem";
+import OrderItem from "@/components/OrderItem/OrderItem.vue";
 
 export default {
     name: "OrderHistory",
@@ -16,6 +16,12 @@ export default {
             required: true
         }
     },
-    components:
-    OrderItem
+    components:{
+        OrderItem
+    },
+    methods:{
+        orderClicked(id){
+            this.$router.push({ name: "OrderDetails", params: { id: id } });
+        }
+    }
 };
