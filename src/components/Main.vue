@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png"/>
-    <Profile/>
-    <OrderHistory/>
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <Profile />
+    <OrderHistory />
   </div>
 </template>
 
