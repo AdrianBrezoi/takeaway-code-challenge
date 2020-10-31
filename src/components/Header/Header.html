@@ -1,4 +1,6 @@
 <div class="header">
-    <!--    TODO: name should be translatable-->
-    <span>Takeaway.com</span>
+    <div v-if="logoSrc">
+        <img alt="Takeaway logo" :src="logoSrc"/>
+    </div>
+    <LanguagePicker/>
 </div>
