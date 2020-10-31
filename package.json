@@ -6,12 +6,13 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales 'src/i18n/locales/**/*.json'"
   },
   "dependencies": {
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "node-sass": "^4.14.1",
+    "order-history-plugin": "AdrianBrezoi/order-history-plugin#main",
     "vue": "^2.6.11",
     "vue-i18n": "^8.17.3",
     "vue-router": "^3.2.0",

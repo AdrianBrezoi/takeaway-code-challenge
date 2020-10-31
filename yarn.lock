@@ -6246,6 +6246,12 @@ ora@^3.4.0:
     strip-ansi "^5.2.0"
     wcwidth "^1.0.1"
 
+order-history-plugin@AdrianBrezoi/order-history-plugin#main:
+  version "0.1.0"
+  resolved "https://codeload.github.com/AdrianBrezoi/order-history-plugin/tar.gz/bddfcd895967a637ef0b55aacbaf0c06c7b9c5ce"
+  dependencies:
+    vue "^2.6.11"
+
 original@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/original/-/original-1.0.2.tgz#e442a61cffe1c5fd20a65f3261c26663b303f25f"

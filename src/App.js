@@ -1,5 +1,5 @@
-import NotificationBanner from "@/components/NotificationBanner/NotificationBanner.vue";
-import Header from "@/components/Header/Header.vue";
+import NotificationBanner from "@/components/Global/NotificationBanner/NotificationBanner.vue";
+import Header from "@/components/Global/Header/Header.vue";
 
 import { mapActions } from "vuex";
 

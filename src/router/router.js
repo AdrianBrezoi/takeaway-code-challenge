@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../components/Home.vue";
-import i18n from "@/i18n";
+import Home from "@/components/Home/Home.vue";
+import i18n from "@/i18n/i18n.js";
 
 Vue.use(VueRouter);
 
@@ -28,7 +28,7 @@ const routes = [
         name: "OrderDetails",
         props: true,
         component: () =>
-          import("../components/OrderDetails/OrderDetails.vue")
+          import("@/components/OrderDetails/OrderDetails.vue")
       }
     ]
   }
