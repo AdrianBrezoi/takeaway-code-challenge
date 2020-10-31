@@ -19,9 +19,4 @@ export default {
     components:{
         OrderItem
     },
-    methods:{
-        orderClicked(id){
-            this.$router.push({ name: "OrderDetails", params: { id: id } });
-        }
-    }
 };

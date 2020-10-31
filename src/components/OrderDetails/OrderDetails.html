@@ -1,12 +1,12 @@
-<!--TODO: improve transition-->
-<transition name="slide" mode="out-in">
+<div class="order-details-container">
     <div>
-        <div>
-            <h1>This is a view for order details</h1>
-            <button>
-<!--                TODO: remove router-link styling-->
-                <router-link to="/">Go back</router-link>
-            </button>
-        </div>
+        <h1>This is a view for order details</h1>
+        <p>{{orderDetails.name}}</p>
+        <p>{{orderDetails.email}}</p>
+        <p>{{orderDetails.body}}</p>
+        <button>
+            <!--                TODO: remove router-link styling-->
+            <router-link to="/">Go back</router-link>
+        </button>
     </div>
-</transition>
+</div>

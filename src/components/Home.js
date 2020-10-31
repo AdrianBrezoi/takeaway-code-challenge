@@ -11,5 +11,9 @@ export default {
         OrderHistory
     },
     computed: {...mapGetters(['orders'])},
-
+    methods:{
+        orderSelected(orderId){
+            this.$router.push({ name: "OrderDetails", params: { orderId } });
+        }
+    }
 };

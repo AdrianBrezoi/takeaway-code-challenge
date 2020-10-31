@@ -1,8 +1,8 @@
 export default {
   name: "NotificationBanner",
   methods: {
-    bannerClicked(id) {
-      this.$router.push({ name: "OrderDetails", params: { id: id } });
+    bannerClicked(orderId) {
+      this.$router.push({ name: "OrderDetails", params: { orderId } });
     }
   }
 };
