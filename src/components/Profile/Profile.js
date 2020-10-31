@@ -1,4 +1,4 @@
-import {mapGetters} from 'vuex';
+import { mapGetters } from "vuex";
 
 export default {
   name: "Profile",
@@ -6,5 +6,5 @@ export default {
   //   // TODO: Add action to update profile in module
   //   // ...mapActions(['updateProfile'])
   // },
-  computed: {...mapGetters(['userProfile'])},
+  computed: { ...mapGetters(["userProfile"]) }
 };
