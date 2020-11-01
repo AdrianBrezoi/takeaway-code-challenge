@@ -1,5 +1,43 @@
-.order-details-container{
-width: 1000px ;
-  border: solid 1px #000;
-  margin: 0 auto;
+.order-details-container {
+  border: $container-border;
+  border-radius: $container-border-radius;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  color: $text-color;
+  font-weight: bold;
+
+  .label {
+    color: $label-color;
+    &:after {
+      content: ':';
+    }
+  }
+
+  .status {
+    &.preparing {
+      color: $status-text-color-preparing;
+    }
+
+    &.delivering {
+      color: $status-text-color-delivering;
+    }
+
+    &.delivered {
+      color: $status-text-color-delivered;
+    }
+  }
+}
+.component-title{
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+.back-icon{
+  height: 24px;
+  width: 32px;
+  cursor: pointer;
+  margin-right: 16px;
 }

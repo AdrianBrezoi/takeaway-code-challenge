@@ -1,12 +1,21 @@
-<div class="page order-details-container">
-    <div>
-        <h1>This is a view for order details</h1>
-        <p>{{orderDetails.name}}</p>
-        <p>{{orderDetails.email}}</p>
-        <p>{{orderDetails.body}}</p>
-        <button>
-            <!--                TODO: remove router-link styling-->
-            <router-link to="/">Go back</router-link>
-        </button>
+<div class="page">
+    <div class="component-title">
+        <img src="@/assets/arrow_back.svg" alt="Go back" class="back-icon" @click="backClicked()"/>
+        <h3>{{ $t('orderDetails') }}</h3>
+    </div>
+    <div class="order-details-container">
+        <div class="label" v-if="orderDetails.restaurant">{{ $t('restaurant') }}</div>
+        <span v-if="orderDetails.restaurant">{{ orderDetails.restaurant }}</span>
+        <div class="label" v-if="orderDetails.status">{{ $t('status') }}</div>
+        <span class="status"
+              v-bind:class="orderDetails.status ? `${orderDetails.status}`: null" v-if="orderDetails.status">{{
+                $t(`order.status.${orderDetails.status}`)
+            }}</span>
+        <div class="label">{{ $t('name') }}</div>
+        <span>{{ orderDetails.name }}</span>
+        <div class="label">{{ $t('email') }}</div>
+        <span>{{ orderDetails.email }}</span>
+        <div class="label">{{ $t('description') }}</div>
+        <span>{{ orderDetails.body }}</span>
     </div>
 </div>

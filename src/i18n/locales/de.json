@@ -21,5 +21,9 @@
   "city": "Stadt",
   "zipcode": "Postleitzahl",
   "profile": "Profil",
-  "orderHistory": "Bestellverlauf"
+  "orderHistory": "Bestellverlauf",
+  "orderDetails": "Bestelldetails",
+  "restaurant": "Restaurant",
+  "status": "Status",
+  "description": "Beschreibung"
 }
