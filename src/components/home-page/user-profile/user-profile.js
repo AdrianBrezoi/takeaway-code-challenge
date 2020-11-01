@@ -1,7 +1,7 @@
 import { mapGetters } from "vuex";
 
 export default {
-  name: "Profile",
+  name: "UserProfile",
   // methods: {
   //   // TODO: Add action to update profile in module
   //   // ...mapActions(['updateProfile'])

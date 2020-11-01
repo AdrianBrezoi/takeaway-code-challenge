@@ -1,4 +1,4 @@
-import LanguagePicker from "@/components/Global/LanguagePicker/LanguagePicker.vue";
+import LanguagePicker from "@/components/global/language-picker/language-picker.vue";
 
 export default {
   name: "Header",

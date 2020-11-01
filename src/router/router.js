@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "@/components/Home/Home.vue";
+import HomePage from "@/components/home-page/home-page.vue";
 import i18n from "@/i18n/i18n.js";
 
 Vue.use(VueRouter);
@@ -20,14 +20,14 @@ const routes = [
     children: [
       {
         path: "/",
-        name: "Home",
-        component: Home
+        name: "HomePage",
+        component: HomePage
       },
       {
         path: "order/:orderId",
         name: "OrderDetails",
         props: true,
-        component: () => import("@/components/OrderDetails/OrderDetails.vue")
+        component: () => import("@/components/order-details/order-details.vue")
       }
     ]
   }
