@@ -1,6 +1,5 @@
 <div class="header">
-    <div v-if="logoSrc">
-        <img alt="Takeaway logo" :src="logoSrc"/>
-    </div>
-    <LanguagePicker/>
+    <img alt="Takeaway logo" v-if="logoSrc" :src="logoSrc" class="logo-image" />
+    <h1 class="header-title">{{ $t('header-title') }}</h1>
+    <LanguagePicker class="language-picker"/>
 </div>
