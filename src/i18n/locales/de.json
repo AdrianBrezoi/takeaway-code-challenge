@@ -7,5 +7,7 @@
       "delivering": "wird geliefert",
       "delivered": "wurde geliefert"
     }
-  }
+  },
+  "noOrders": "Es ist keine Bestellhistorie anzuzeigen."
+
 }

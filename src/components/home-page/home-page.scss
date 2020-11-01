@@ -1,7 +1,20 @@
-.home{
-  margin: 0 auto;
+.home-container{
   display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 4em 6em;
   grid-column-gap: 32px;
-  grid-auto-flow: column;
-  width: min-content;
+
+  .no-orders{
+    text-align: center;
+    position: relative;
+    > span {
+      font-size: 24px;
+      height: 24px;
+      line-height: 24px;
+      position: relative;
+      top: calc(50% - 24px);
+    }
+    border: $container-border;
+    border-radius: $container-border-radius;
+  }
 }

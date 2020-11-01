@@ -1,8 +1,9 @@
-.profile-container{
- border: solid 1px black;
-  width: 350px;
+.profile-container {
+  border: $container-border;
+  border-radius: $container-border-radius;
 }
-.avatar{
+
+.avatar {
   width: 150px;
   height: 150px;
   elevation: higher;

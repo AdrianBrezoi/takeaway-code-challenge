@@ -7,5 +7,7 @@
       "delivering": "wordt geleverd",
       "delivered": "is afgeleverd"
     }
-  }
+  },
+  "noOrders": "Er is geen bestelgeschiedenis om weer te geven."
+
 }

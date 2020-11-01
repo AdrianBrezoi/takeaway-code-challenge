@@ -9,4 +9,6 @@ $notification-text-color: $label-color;
 $status-text-color-delivering: blue;
 $status-text-color-delivered: green;
 $status-text-color-preparing: red;
-
+$border-color: #dfdfdf;
+$container-border-radius: 8px;
+$container-border: solid 2px $border-color;

@@ -7,5 +7,6 @@
       "delivering": "is being delivered",
       "delivered": "has been delivered"
     }
-  }
+  },
+  "noOrders": "There is no order history to show."
 }
