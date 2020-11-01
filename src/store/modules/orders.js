@@ -12,7 +12,6 @@ const actions = {
         const response = await axios.get(
             "https://jsonplaceholder.typicode.com/posts?_limit=5"
         );
-        console.log("Orders DATA", response.data);
         const temp = response.data[0];
         response.data[0] = {active: true, status: 'preparing', name: 'Blue Sakura', ...temp}
         commit("setOrders", response.data);

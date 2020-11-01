@@ -11,7 +11,6 @@ const actions = {
     const response = await axios.get(
       "https://jsonplaceholder.typicode.com/users?_limit=1"
     );
-    console.log("Profile DATA", response.data);
     commit("setProfile", response.data[0]);
   }
 };
