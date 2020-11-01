@@ -1,4 +1,39 @@
-.banner-container{
+.active-order-container {
+  display: flex;
+  column-gap: 4px;
   background-color: $notification-bg-color;
   color: $notification-text-color;
+  width: max-content;
+  height: min-content;
+  line-height: 32px;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 8px;
+  align-content: center;
+
+  .name {
+    font-weight: bold;
+  }
+
+  .status {
+    &.preparing {
+      color: $status-text-color-preparing;
+    }
+
+    &.delivering {
+      color: $status-text-color-delivering;
+    }
+
+    &.delivered {
+      color: $status-text-color-delivered;
+    }
+  }
+  .show-details{
+    width: 24px;
+    height: 32px;
+  }
 }

@@ -3,7 +3,10 @@ $text-color: darkGray;
 $text-color-inverse: white;
 $label-color: black;
 $header-bg-color: $takeaway-orange;
-$notification-bg-color: blue;
+$notification-bg-color: #FFE4C9;
 $header-text-color: $text-color-inverse;
-$notification-text-color: $text-color-inverse;
+$notification-text-color: $label-color;
+$status-text-color-delivering: blue;
+$status-text-color-delivered: green;
+$status-text-color-preparing: red;
 

@@ -1,6 +1,8 @@
 <div id="app">
-    <Header  v-bind:lang="$i18n.locale"/>
-    <NotificationBanner>NotificationBanner</NotificationBanner>
+    <div class="header-container">
+        <Header v-bind:lang="$i18n.locale"/>
+        <NotificationBanner v-if="activeOrder"/>
+    </div>
     <router-view/>
 </div>
 

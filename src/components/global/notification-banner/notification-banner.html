@@ -1,4 +1,8 @@
-<div class="banner-container">
-<!--    TODO: make this a nice looking banner & pass along the active order id in the click handler-->
-    <span @click="bannerClicked(1)"> I AM Notification banner</span>
+<div class="active-order-container">
+    <span>{{ $t('order.from') }}</span>
+    <span class="name">{{ activeOrder.name }}</span>
+    <span class="status" v-bind:class="activeOrder.status ? `${activeOrder.status}`: null">{{
+            $t(`order.status.${activeOrder.status}`)
+        }}</span>
+    <img @click="bannerClicked(activeOrder.id)" class="show-details" src="@/assets/arrow_forward.svg" alt="more icon"/>
 </div>

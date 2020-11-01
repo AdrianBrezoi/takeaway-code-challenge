@@ -1,4 +1,11 @@
 {
-  "message": "hoi i18n | Nederlands !!",
-  "header-title": "Tijd om eten te bestellen"
+  "header-title": "Tijd om eten te bestellen",
+  "order": {
+    "from": "Uw bestelling van",
+    "status": {
+      "preparing": "wordt voorbereid",
+      "delivering": "wordt geleverd",
+      "delivered": "is afgeleverd"
+    }
+  }
 }

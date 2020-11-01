@@ -1,4 +1,11 @@
 {
-  "message": "hello i18n | English !!",
-  "header-title": "Time to order food"
+  "header-title": "Time to order food",
+  "order": {
+    "from": "Your order from",
+    "status": {
+      "preparing": "is being prepared",
+      "delivering": "is being delivered",
+      "delivered": "has been delivered"
+    }
+  }
 }
