@@ -8,5 +8,18 @@
       "delivered": "has been delivered"
     }
   },
-  "noOrders": "There is no order history to show."
+  "noOrders": "There is no order history to show.",
+  "general": "General",
+  "username": "Username",
+  "name": "Name",
+  "phoneNumber": "Phone number",
+  "email": "Email",
+  "website": "Website",
+  "address": "Address",
+  "street": "Street",
+  "suite": "Suite",
+  "city": "City",
+  "zipcode": "Zipcode",
+  "profile": "Profile",
+  "orderHistory": "Order History"
 }

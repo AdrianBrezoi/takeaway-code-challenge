@@ -1,11 +1,36 @@
 .profile-container {
   border: $container-border;
   border-radius: $container-border-radius;
+
+  .info-header {
+    margin-inline-start: 8px;
+  }
+}
+
+.user-info-container {
+  margin: 8px;
+  padding: 8px;
+  display: grid;
+  grid-column-gap: 8px;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 8px;
+  color: $text-color;
+  font-weight: 600;
+
+  .label {
+    color: $label-color;
+
+    &:after {
+      content: ':';
+    }
+  }
+
 }
 
 .avatar {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   elevation: higher;
   object-fit: scale-down;
 }

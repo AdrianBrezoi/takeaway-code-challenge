@@ -1,7 +1,8 @@
-<div class="home-container">
-    <Profile/>
-    <!--    TODO: Improve v-if to validate >2 <5 orders.len-->
-    <div v-if="orders.length >= 2">
+<div class="page home-container">
+    <h3 class="component-title">{{ $t('profile') }}</h3>
+    <UserProfile/>
+    <h3 class="component-title">{{ $t('orderHistory') }}</h3>
+    <div v-if="orders.length >= 2 && orders.length <= 5">
         <OrderHistory v-bind:orders="orders" v-bind:currency="'EUR'" v-on:order-selected="orderSelected"/>
     </div>
     <div v-else class="no-orders">

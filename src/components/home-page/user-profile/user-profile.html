@@ -1,20 +1,35 @@
 <div class="profile-container">
-    <img class="avatar" alt="profile icon" src="@/assets/quokka-profile-pic.jpg"/>
-    <h4>{{ $t('message') }}</h4>
-    <h4>User info</h4>
-<!--    TODO: Add loading indicator here, only use data after it's present-->
-    <div v-if="userProfile">
-        <div>{{ userProfile.userName }}</div>
+    <img class="avatar" alt="Profile icon" src="@/assets/quokka-profile-pic.jpg"/>
+    <h3 class="info-header">{{ $t('general') }}</h3>
+    <div v-if="userProfile" class="user-info-container">
+        <div class="label">{{ $t('username') }}</div>
+        <span>{{ userProfile.username }}</span>
+
+        <div class="label">{{ $t('name') }}</div>
         <div>{{ userProfile.name }}</div>
+
+        <div class="label">{{ $t('phoneNumber') }}</div>
         <div>{{ userProfile.phone }}</div>
+
+        <div class="label">{{ $t('email') }}</div>
         <div>{{ userProfile.email }}</div>
+
+        <div class="label">{{ $t('website') }}</div>
         <div>{{ userProfile.website }}</div>
     </div>
-    <h4>Address</h4>
-    <div v-if="userProfile.address">
+    <h3 class="info-header">{{ $t('address') }}</h3>
+    <div v-if="userProfile.address" class="user-info-container">
+        <div class="label">{{ $t('street') }}</div>
+
         <div>{{ userProfile.address.street }}</div>
+
+        <div class="label">{{ $t('suite') }}</div>
         <div>{{ userProfile.address.suite }}</div>
+
+        <div class="label">{{ $t('city') }}</div>
         <div>{{ userProfile.address.city }}</div>
+
+        <div class="label">{{ $t('zipcode') }}</div>
         <div>{{ userProfile.address.zipcode }}</div>
     </div>
 </div>

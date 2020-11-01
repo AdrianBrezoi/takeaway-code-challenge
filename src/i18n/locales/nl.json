@@ -8,6 +8,18 @@
       "delivered": "is afgeleverd"
     }
   },
-  "noOrders": "Er is geen bestelgeschiedenis om weer te geven."
-
+  "noOrders": "Er is geen bestelgeschiedenis om weer te geven.",
+  "general": "Algemeen",
+  "username": "Gebruikersnaam",
+  "name": "Naam",
+  "phoneNumber": "Telefoonnummer",
+  "email": "Email",
+  "website": "Website",
+  "address": "Adres",
+  "street": "Straat",
+  "suite": "Suite",
+  "city": "Stad",
+  "zipcode": "Postcode",
+  "profile": "Profiel",
+  "orderHistory": "Bestelgeschiedenis"
 }

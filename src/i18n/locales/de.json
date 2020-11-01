@@ -8,6 +8,18 @@
       "delivered": "wurde geliefert"
     }
   },
-  "noOrders": "Es ist keine Bestellhistorie anzuzeigen."
-
+  "noOrders": "Es ist keine Bestellhistorie anzuzeigen.",
+  "general": "Allgemeines",
+  "username": "Nutzername",
+  "name": "Name",
+  "phoneNumber": "Telefonnummer",
+  "email": "Email",
+  "website": "Webseite",
+  "address": "Adresse",
+  "street": "Straße",
+  "suite": "Appartement",
+  "city": "Stadt",
+  "zipcode": "Postleitzahl",
+  "profile": "Profil",
+  "orderHistory": "Bestellverlauf"
 }
