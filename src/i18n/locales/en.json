@@ -25,5 +25,7 @@
   "orderDetails": "Order Details",
   "restaurant": "Restaurant",
   "status": "Status",
-  "description": "Description"
+  "description": "Description",
+  "title": "Title",
+  "price": "Price"
 }

@@ -3,7 +3,7 @@
     <UserProfile/>
     <h3 class="component-title">{{ $t('orderHistory') }}</h3>
     <div v-if="orders.length >= 2 && orders.length <= 5">
-        <OrderHistory v-bind:orders="orders" v-bind:currency="'EUR'" v-on:order-selected="orderSelected"/>
+        <OrderHistory v-bind:orders="orders" v-bind:currency="'EUR'" v-bind:locale="$i18n.locale" v-on:order-selected="orderSelected"/>
     </div>
     <div v-else class="no-orders">
         <span>

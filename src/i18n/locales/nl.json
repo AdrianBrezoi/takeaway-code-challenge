@@ -25,5 +25,7 @@
   "orderDetails": "Bestel Details",
   "restaurant": "Restaurant",
   "status": "Toestand",
-  "description": "Omschrijving"
+  "description": "Omschrijving",
+  "title": "Titel",
+  "price": "Prijs"
 }

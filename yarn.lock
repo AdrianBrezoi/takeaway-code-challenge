@@ -6248,9 +6248,10 @@ ora@^3.4.0:
 
 order-history-plugin@AdrianBrezoi/order-history-plugin#main:
   version "0.1.0"
-  resolved "https://codeload.github.com/AdrianBrezoi/order-history-plugin/tar.gz/bddfcd895967a637ef0b55aacbaf0c06c7b9c5ce"
+  resolved "https://codeload.github.com/AdrianBrezoi/order-history-plugin/tar.gz/9f999e575951e59f479bf0c984a94d16ab7bfcbc"
   dependencies:
     vue "^2.6.11"
+    vue-i18n "^8.22.1"
 
 original@^1.0.0:
   version "1.0.2"
@@ -8756,7 +8757,7 @@ vue-i18n-extract@1.0.2:
     is-valid-glob "^1.0.0"
     yargs "^13.2.2"
 
-vue-i18n@^8.17.0, vue-i18n@^8.17.3:
+vue-i18n@^8.17.0, vue-i18n@^8.17.3, vue-i18n@^8.22.1:
   version "8.22.1"
   resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.22.1.tgz#b9dd098a17e1f5adb91bdf9611f0385310da7cb1"
   integrity sha512-JNgiEJ5a8YPfk5y2lKyfOAGLmkpAVfhaUi+T4wGpSppRYZ3XSyawSDDketY5KV2CsAiBLAGEIO6jO+0l2hQubg==

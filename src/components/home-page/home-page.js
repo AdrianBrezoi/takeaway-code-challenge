@@ -9,7 +9,7 @@ export default {
   computed: { ...mapGetters(["orders"]) },
   methods: {
     orderSelected(orderId) {
-      this.$router.push({ name: "order-details", params: { orderId } });
+      this.$router.push({ name: "OrderDetails", params: { orderId } });
     }
   }
 };
