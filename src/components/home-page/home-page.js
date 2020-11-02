@@ -4,7 +4,7 @@ import { mapGetters } from "vuex";
 export default {
   name: "HomePage",
   components: {
-    UserProfile,
+    UserProfile
   },
   computed: { ...mapGetters(["orders"]) },
   methods: {

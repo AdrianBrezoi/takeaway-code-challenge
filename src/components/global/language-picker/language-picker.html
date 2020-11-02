@@ -1,5 +1,4 @@
 <div class="locale-changer">
-    <!--    TODO: decide whether or not to add label here!-->
     <select v-model="$i18n.locale" v-on:change="localeChanged()">
         <option v-for="(lang, i) in $i18n.availableLocales" :key="`Lang${i}`" :value="lang">{{ lang }}</option>
     </select>

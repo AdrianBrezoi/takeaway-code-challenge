@@ -1,4 +1,4 @@
-import {mapGetters} from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   name: "NotificationBanner",
@@ -7,6 +7,5 @@ export default {
       this.$router.push({ name: "OrderDetails", params: { orderId } });
     }
   },
-  computed: { ...mapGetters(["activeOrder"]) },
-
+  computed: { ...mapGetters(["activeOrder"]) }
 };
