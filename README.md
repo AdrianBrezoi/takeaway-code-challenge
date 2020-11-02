@@ -25,6 +25,9 @@
     * I needed a way to easily manage the apps' locale and match it to relevant translation files.
     * I needed a way to easily fetch the stored translation values (based on the locale) using a key.
     * While not officially supported by Vue, this library was created by one of the members of the Vue.js core team and is highly popular in the Vue.js community, which means help is likely easy to find if needed.
+* **_Why did I choose to use the jest library?_**
+    * I needed a way to easily create and manage unit & component tests.
+    * Jest is officially supported and endorsed by Vue.js and is seemingly one of the most popular testing libraries within the Vue.js community, which increases the odds of finding solutions for most commonly encountered issues.
 * **_Why did I split up all the .vue files into separate files?_**
     * I prefer having multiple small files with specific purposes over one large general purpose file.
     * I believe this structure makes it easier to find specific pieces of code and that it can improve the maintainability of the entire codebase.
@@ -35,6 +38,21 @@
     I attempted to import the CSS of Takeaway.com into the app to ensure that the styling would match that of Takeaway.com and that it would be updated whenever the official styling is updated.
 
     However, I ran into multiple issues with the fonts used in this CSS, since I did not have permissions to download them, and I also realised that there could potentially be some legal issues if I were to use the official styling of Takeaway.com and publish that in a public project.
+    
+## Incomplete parts
+* **_Testing_**
+
+   While trying to implement testing using vue-test-utils & Jest I ran into multiple issues, especially with mocking the 3rd party libraries used (Vuex, vue-router, i18n etc.) that i was unable to solve. Attempting to solve these issues cost me a large amount of time and was ultimately not fruitful. 
+
+   I believe that my lack of experience with Vue.js, component testing & all of the aforementioned 3rd party libraries is the main reason behind my inability to fix the issues encountered within the alloted time. I am confident that with more training and time I would be able to learn how to implement proper tests in this and other Vue.js projects.
+
+## Potential future improvements on this project
+   * **_PWA support_**
+      * Support for progressive web app could be added to the project to improve its compatibility with a larger number of mobile devices.
+   * **_UI Component Library_**
+      * A UI component library such as Bootstrap Vue, Vue Material, Vuetify etc could be used to to replace/enrich the custom-made components in the app with ease (e.g. by adding Skeleton loading indicators, dialogs, alerts etc.).
+   * **_Animations_**
+      * Animation support could be easily added to the app by using a 3rd party animation library such as Animate.css to enrich the user experience and make the app feel more responsive. 
 ## Project setup
 ```
 yarn install
